@@ -239,7 +239,7 @@ section {
   width: 100%;
 }
 
-.home-imgHover {
+/* .home-imgHover {
   position: absolute;
   top: 30rem;
   right: 0;
@@ -250,7 +250,7 @@ section {
 
 .home-imgHover:hover {
   opacity: 0.8;
-}
+} */
 
 .about {
   display: flex;

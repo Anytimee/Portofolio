@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" scroll smooth />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio - Aghie Faezya</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo"> <span>; </span>Aghie Faezya.</a>
+
+      <div class="bx bx-menu" id="menu-icon"></div>
+
+      <nav class="navbar">
+        <a href="/home.html" class="active">Home</a>
+        <a href="/home.html">About</a>
+        <a href="#">Portofolio</a>
+        <a href="/home.html">Contact</a>
+
+        <span class="active-nav"></span>
+      </nav>
+    </header>
+    <!-- hoME sec -->
+    <form action=""></form>
+
+    <!-- <div class="card-container">
+      <div class="card">
+        <img src="/img/code-820275_640.jpg" alt="" />
+        <div class="card-content">
+          <h3>Project 1</h3>
+          <p></p>
+          <a href="" class="btn-card">Look</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/img/code-820275_640.jpg" alt="" />
+        <div class="card-content">
+          <h3>Project 1</h3>
+          <p></p>
+          <a href="" class="btn-card">Look</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/img/code-820275_640.jpg" alt="" />
+        <div class="card-content">
+          <h3>Project 1</h3>
+          <p></p>
+          <a href="" class="btn-card">Look</a>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- Footer -->
+    <!-- <footer class="footer">
+        <div class="footer-text">
+          <p>Copyright &copy; 2024 by Faezya | All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+          <a href=""><i class="bx bx-chevrons-up"></i></a>
+        </div>
+      </footer> -->
+    <!-- end foot -->
+
+    <!-- JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
+    <script>
+      gsap.from(".navbar", { duration: 1, y: -100, opacity: 0 });
+      gsap.from(".header", { duration: 1.5, y: -100, opacity: 0 });
+      gsap.from(".text-animate", { duration: 1, x: -50, opacity: 0, delay: 0.5 });
+    </script>
+    <script src="/js/script.js"></script>
+
+    <script>
+      const scriptURL = "https://script.google.com/macros/s/AKfycbzxXehcNOv38eqiRK16IJUwoTOh0Zngjzh-03UgnBj22elR_rxH8fFMNMOfTAt8AXy1/exec";
+      const form = document.forms["portofolio-contact-form"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => console.log("Success!", response))
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>

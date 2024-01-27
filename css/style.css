@@ -351,7 +351,7 @@ span {
 
 @media (max-width: 1300px) {
   html {
-    font-size: 60%;
+    font-size: 65%;
   }
 
   .home-content h1 {
@@ -396,7 +396,7 @@ span {
 
 @media (max-width: 768px) {
   html {
-    font-size: 55%;
+    font-size: 60%;
   }
   .header {
     background: var(--bg-color);
@@ -474,7 +474,7 @@ span {
 
 @media (max-width: 640px) {
   html {
-    font-size: 50%;
+    font-size: 55%;
   }
 
   .home-imgHover img {
@@ -484,7 +484,7 @@ span {
 
 @media (max-width: 520px) {
   html {
-    font-size: 35%;
+    font-size: 45%;
   }
   .home-content h1 {
     display: flex;
